@@ -3,7 +3,7 @@
 // TODO: вкладки проверять без запроса, чистый url
 // TODO: иконку лучше заменить, в иконке важен прозрачный фон
 
-var DEBUG = true;
+var DEBUG = false;
 
 function d(mess) {
     DEBUG && console.log(mess);
@@ -37,13 +37,13 @@ buttons.ActionButton({
 
     onClick: function () {
         for (let tab of tabs) {
-            d(tab.url)
-//            if (list_tab_url.indexOf(tab.url) == -1) {
-//                list_tab_url.push(tab.url);
-//            } else {
-//                d(tab.url + " is dublicate. Close tab.");
-//                tab.close();
-//            }
+//            d(tab.url)
+            if (list_tab_url.indexOf(tab.url) == -1) {
+                list_tab_url.push(tab.url);
+            } else {
+                d(tab.url + " is dublicate. Close tab.");
+                tab.close();
+            }
         }
 
         list_tab_url = [];
