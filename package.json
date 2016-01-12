@@ -1,0 +1,16 @@
+{
+  "title": "Closing duplicate tabs",
+  "name": "closingduplicatetabs",
+  "version": "0.0.1",
+  "description": "Closing duplicate tabs",
+  "main": "index.js",
+  "author": "Ilya Petrash",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
